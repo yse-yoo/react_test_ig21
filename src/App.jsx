@@ -1,5 +1,6 @@
 import './App.css';
 import CountPage from './CountPage';
+import Information from './Information';
 import Message from './Message';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         Hello, React
         <Message user={user} />
         <CountPage />
+        <Information />
       </header>
     </div>
   );
