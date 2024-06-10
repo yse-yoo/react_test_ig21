@@ -6,6 +6,7 @@ function CountPage() {
 
   const countUpHandler = () => {
     console.log('Count up!!!')
+    setCount(count + 1);
   }
 
   return (
