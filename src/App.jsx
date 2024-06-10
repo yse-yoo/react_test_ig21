@@ -6,7 +6,7 @@ function App() {
   var user = {
     name: 'Yoshikawa',
     age: 48,
-    country: 'Japen',
+    country: 'Japan',
   }
   return (
     <div className="App">
