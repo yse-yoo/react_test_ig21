@@ -15,7 +15,7 @@ function Information() {
     }
     return (
         <div>
-            <button onClick={showHandler}>お知らせ表示</button>
+            <button onClick={showHandler}>{isShow ? '非表示' : 'お知らせ表示'}</button>
             {isShow &&
                 <>
                     <h2>Information</h2>
