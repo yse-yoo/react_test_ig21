@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function Information() {
+    const [isShow, setIsShow] = useState(false);
+
     // TODO: APIサーバからお知らせ情報を取得
     var informations = [
         { id: 1, title: '2学期がはじまりました' },
@@ -9,7 +11,9 @@ function Information() {
     ]
     return (
         <div>
+            <button>お知らせ表示</button>
             <h2>Information</h2>
+            {isShow &&
             <ul>
                 {
                     informations.map(information => (
@@ -17,6 +21,7 @@ function Information() {
                     ))
                 }
             </ul>
+            }
         </div>
     )
 }
