@@ -7,11 +7,11 @@ function Message(props) {
         <>
             <h2>Message</h2>
             <h3>User Name</h3>
-            <p>Yohei Yoshikawa</p>
+            <p>{user.name}</p>
             <h3>Age</h3>
-            <p>48</p>
+            <p>{user.age}</p>
             <h3>Country</h3>
-            <p>Japn</p>
+            <p>{user.country}</p>
         </>
     )
 }

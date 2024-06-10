@@ -4,7 +4,7 @@ import Message from './Message';
 function App() {
   // userオブジェクト
   var user = {
-    name: 'Yohei Yoshikawa',
+    name: 'Yoshikawa',
     age: 48,
     country: 'Japen',
   }
