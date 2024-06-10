@@ -12,15 +12,17 @@ function Information() {
     return (
         <div>
             <button>お知らせ表示</button>
-            <h2>Information</h2>
             {isShow &&
-            <ul>
-                {
-                    informations.map(information => (
-                        <li key={information.id}>{information.title}</li>
-                    ))
-                }
-            </ul>
+                <>
+                    <h2>Information</h2>
+                    <ul>
+                        {
+                            informations.map(information => (
+                                <li key={information.id}>{information.title}</li>
+                            ))
+                        }
+                    </ul>
+                </>
             }
         </div>
     )
