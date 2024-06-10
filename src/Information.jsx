@@ -9,9 +9,13 @@ function Information() {
         { id: 2, title: 'Reactの学習' },
         { id: 3, title: 'グループ開発について' },
     ]
+
+    const showHandler = (e) => {
+        setIsShow(!isShow)
+    }
     return (
         <div>
-            <button>お知らせ表示</button>
+            <button onClick={showHandler}>お知らせ表示</button>
             {isShow &&
                 <>
                     <h2>Information</h2>
